@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import NavAvatar from './NavAvatar';
 
 const Container = styled.div`
     color: #1f4037;
@@ -25,15 +26,29 @@ const NavbarContainer = styled.div`
 
 const NavbarLink = styled(NavLink)`
     text-decoration:none;
-    font-size:16px;
+    font-size:0.8rem;
     color:#1f4037;
     margin:2px;
     padding:0 10px;
+
 `
 
-const Button = styled.a`
+const Nav = styled.a`
     margin:2px;
     padding:0 10px;
+
+
+    .fas.fa-cart-plus {
+        color: #1f4037;
+    }
+`
+const Button = styled.button `
+    font-size:0.8rem;
+    padding: 08px;
+    background: inherit;
+    border: 1px solid #1f4037;
+    border-radius: 5px;
+    color: #1f4037;
 `
 
 const Logo = styled.h1`
@@ -52,7 +67,11 @@ const Navbar = () => {
                     <NavbarLink to="/pricelist">pricelist</NavbarLink>
                     <NavbarLink to="/benefit">benefit</NavbarLink>
                     <NavbarLink to="/learn">learn</NavbarLink>
-                    <Button href="#"><button  className='btn' >Become a seller</button></Button>
+                    <Nav href="#"><Button  className='btn' >Become a seller</Button></Nav>
+                    <Nav href="#"><i class="fas fa-cart-plus "></i></Nav>
+                    <Nav><NavAvatar/></Nav>
+                    {/* <Nav href="#"><img src={} alt="img" /></Nav> */}
+                    
                 </NavbarContainer>
             </Right>
         </Container>
