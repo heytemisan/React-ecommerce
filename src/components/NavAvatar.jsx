@@ -14,11 +14,7 @@ const ImageButton = styled.button `
     padding: 5px;
     border-radius: 20px;
     border-color: transparent;
-
-    img {
-        width:20px;
-        height:20px
-    }
+    background-color: transparent;
 `
 
 const NavAvatar = () => {
@@ -37,7 +33,7 @@ const [open, setOpen] = useState(false);
 return (
     <>
         <ImageButton href="#" onClick={() => setOpen(!open)}>
-            <img src={'https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png'} alt="" />
+            <img className="imgbtn" src={'https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png'} alt="" />
         </ImageButton>
 
         {open && props.children}
