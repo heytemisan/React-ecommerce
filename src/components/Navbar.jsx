@@ -29,6 +29,12 @@ const NavbarLink = styled(NavLink)`
     color:#1f4037;
     margin:5px;
     padding:0 10px;
+
+    &.active {
+        background-color:#1f4037;
+        color:#fff;
+        padding:10px 20px;
+    } 
 `
 
 const Logo = styled.h1`
@@ -47,7 +53,7 @@ const Navbar = () => {
                     <NavbarLink to="/pricelist">pricelist</NavbarLink>
                     <NavbarLink to="/benefit">benefit</NavbarLink>
                     <NavbarLink to="/learn">learn</NavbarLink>
-                    <NavbarLink to="/learn"><a>Hello</a></NavbarLink>
+                    <a className='btn' href="#"></a>
                 </NavbarContainer>
             </Right>
         </Container>
