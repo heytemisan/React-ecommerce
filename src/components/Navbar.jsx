@@ -52,7 +52,7 @@ const Navbar = () => {
                     <NavbarLink to="/pricelist">pricelist</NavbarLink>
                     <NavbarLink to="/benefit">benefit</NavbarLink>
                     <NavbarLink to="/learn">learn</NavbarLink>
-                    <Button className='btn' href="#"><button>Become a seller</button></Button>
+                    <Button href="#"><button  className='btn' >Become a seller</button></Button>
                 </NavbarContainer>
             </Right>
         </Container>
