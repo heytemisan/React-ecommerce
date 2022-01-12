@@ -26,7 +26,7 @@ const NavbarContainer = styled.div`
 
 const NavbarLink = styled(NavLink)`
     text-decoration:none;
-    font-size:0.8rem;
+    font-size:1rem;
     color:#1f4037;
     margin:2px;
     padding:0 10px;
@@ -43,7 +43,7 @@ const Nav = styled.a`
     }
 `
 const Button = styled.button `
-    font-size:0.8rem;
+    font-size:1rem;
     padding: 08px;
     background: inherit;
     border: 1px solid #1f4037;

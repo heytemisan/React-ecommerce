@@ -16,7 +16,7 @@ body {
 }
 
 .imgbtn {
-  width:27px;
-  height:27px;
-  object-fit: contain;
+  width:35px;
+  height:35px;
+  vertical-align: middle;
 }

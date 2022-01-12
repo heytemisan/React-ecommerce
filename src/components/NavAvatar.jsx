@@ -10,7 +10,7 @@ const Button = styled.a `
         padding:0 10px;
     }
 `
-const ImageButton = styled.button `
+const ImageButton = styled.a `
     padding: 5px;
     border-radius: 20px;
     border-color: transparent;
