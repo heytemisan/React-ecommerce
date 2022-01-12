@@ -27,14 +27,13 @@ const NavbarLink = styled(NavLink)`
     text-decoration:none;
     font-size:16px;
     color:#1f4037;
-    margin:5px;
+    margin:2px;
     padding:0 10px;
+`
 
-    &.active {
-        background-color:#1f4037;
-        color:#fff;
-        padding:10px 20px;
-    } 
+const Button = styled.a`
+    margin:2px;
+    padding:0 10px;
 `
 
 const Logo = styled.h1`
@@ -53,7 +52,7 @@ const Navbar = () => {
                     <NavbarLink to="/pricelist">pricelist</NavbarLink>
                     <NavbarLink to="/benefit">benefit</NavbarLink>
                     <NavbarLink to="/learn">learn</NavbarLink>
-                    <a className='btn' href="#"></a>
+                    <Button className='btn' href="#"><button>Become a seller</button></Button>
                 </NavbarContainer>
             </Right>
         </Container>
