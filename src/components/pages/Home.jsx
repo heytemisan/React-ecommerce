@@ -46,6 +46,31 @@ const HeroText = styled.div`
     width:100%;
     height:auto;
     font-size:1rem;
+
+    .smallText {
+        background-color:green;
+        grid-area:smallText;
+    }
+
+    .title {
+        background-color:blue;
+        grid-area:title;
+    }
+
+    .subTitle {
+        background-color:black;
+        grid-area:subTitle;
+    }
+
+    .button {
+        background-color:brown;
+        grid-area:button;
+    }
+
+    .button2 {
+        background-color:brown;
+        grid-area:button2;
+    }
 `
 
 const Home = () => {
