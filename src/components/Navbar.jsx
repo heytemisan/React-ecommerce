@@ -76,6 +76,27 @@ const NavButton = styled.button `
         display:none;
     }
 `
+const NavbarExtendedContainer = styled.div`
+    position: absolute;
+    top:60px;
+    left:0;
+    height: calc(100vh - 60px);
+    width: 100%;
+    background: #1f4037;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+`
+
+const NavbarLinkExtend = styled(NavLink)`
+    text-decoration:none;
+    font-size:2rem;
+    color:white;
+    margin:10px;
+    padding:0 10px;
+`
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -107,12 +128,14 @@ const Navbar = () => {
                 </NavbarContainer>
             </Right>
 
-            <NavbarExtendedContainer>
+            {menuOpen && (
+                <NavbarExtendedContainer>
                     <NavbarLinkExtend to="/">Home</NavbarLinkExtend>
                     <NavbarLinkExtend to="/pricelist">pricelist</NavbarLinkExtend>
                     <NavbarLinkExtend to="/benefit">benefit</NavbarLinkExtend>
                     <NavbarLinkExtend to="/learn">learn</NavbarLinkExtend>
-            </NavbarExtendedContainer>
+                </NavbarExtendedContainer>
+            )}
         </Container>
     )
 }
