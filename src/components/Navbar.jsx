@@ -95,7 +95,7 @@ const NavbarLinkExtend = styled(NavLink)`
     font-size:2rem;
     color:white;
     margin:10px;
-    padding:0 10px;
+    margin-bottom:20px;
 `
 
 const Navbar = () => {
@@ -130,10 +130,10 @@ const Navbar = () => {
 
             {menuOpen && (
                 <NavbarExtendedContainer>
-                    <NavbarLinkExtend to="/">Home</NavbarLinkExtend>
-                    <NavbarLinkExtend to="/pricelist">pricelist</NavbarLinkExtend>
-                    <NavbarLinkExtend to="/benefit">benefit</NavbarLinkExtend>
-                    <NavbarLinkExtend to="/learn">learn</NavbarLinkExtend>
+                    <NavbarLinkExtend to="/" onClick={handleClick}>Home</NavbarLinkExtend>
+                    <NavbarLinkExtend to="/pricelist" onClick={handleClick}>pricelist</NavbarLinkExtend>
+                    <NavbarLinkExtend to="/benefit" onClick={handleClick}>benefit</NavbarLinkExtend>
+                    <NavbarLinkExtend to="/learn" onClick={handleClick}>learn</NavbarLinkExtend>
                 </NavbarExtendedContainer>
             )}
         </Container>
