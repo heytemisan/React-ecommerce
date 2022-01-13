@@ -123,7 +123,7 @@ const Navbar = () => {
                         </a>
                     </Nav>
                     <NavButton onClick={handleClick}>
-                        {menuOpen ? <>☱</>:<>&#127828;</>}
+                        {menuOpen ? <>&#127829;</>:<>&#127828;</>}
                     </NavButton>
                 </NavbarContainer>
             </Right>
