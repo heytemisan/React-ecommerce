@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.div `
     display:grid;
-    grid-template-columns: 4fr 3fr; 
+    grid-template-columns: 4fr 4fr; 
     grid-template-rows: 4fr 2fr;
     grid-template-areas: 
     "heroSection heroSectionSide heroSectionSide"
@@ -18,7 +18,7 @@ const Container = styled.div `
     }
 
     .heroSectionSide {
-        background-color:orange;
+        background-color:white;
         grid-area:heroSectionSide;
     }
 
@@ -38,10 +38,28 @@ const Container = styled.div `
     }
 `
 
+const HeroText = styled.div`
+    display:grid;
+    grid-template-columns: 4fr 4fr; 
+    grid-template-rows: 4fr 2fr;
+    grid-template-areas: ;
+    width:100%;
+    height:auto;
+    font-size:1rem;
+`
+
 const Home = () => {
     return (
         <Container>
-            <div className="heroSection">hero</div>
+            <div className="heroSection">
+                <HeroText>
+                    <div className="smallText">smalltext</div>
+                    <div className="title">title</div>
+                    <div className="subTitle">subtitle</div>
+                    <div className="button">button1</div>
+                    <div className="button2">button2</div>
+                </HeroText>
+            </div>
             <div className="heroSectionSide">image</div>
             <div className="content1">content1</div>
             <div className="content2">content2</div>
