@@ -55,6 +55,7 @@ const Logo = styled.h1`
 `
 
 const Navbar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
     return (
         <Container>
             <Left>
@@ -68,15 +69,14 @@ const Navbar = () => {
                     <NavbarLink to="/learn">learn</NavbarLink>
                     <Nav href="#"><Button  className='btn' >Become a seller</Button></Nav>
                     <Nav href="#"><i className="fas fa-cart-plus"></i></Nav>
-                    <Nav className="has-dropdown">
-                        <a href="#"><img className="imgbtn" src={'https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png'} alt="" /></a>
-                        <div class="dropdown">
-                            <div class="dropdown-item">
-                                <a href="#" className='dropdown-btn'>sign in</a>
-                                <a href="#" className='dropdown-btn'>register</a>
-                            </div>
-                        </div>
+                    <Nav>
+                        <a href="#">
+                            <img className="imgbtn" src={'https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png'} alt="" /><i class="fas fa-sort-down"></i>
+                        </a>
                     </Nav>
+                    <NavButton>
+                        {menuOpen ? <>&10005</>:<>☱</>}
+                    </NavButton>
                 </NavbarContainer>
             </Right>
         </Container>
