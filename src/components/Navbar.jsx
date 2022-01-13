@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import NavAvatar from './NavAvatar';
 
 const Container = styled.div`
     color: #1f4037;
@@ -73,8 +72,8 @@ const Navbar = () => {
                         <a href="#"><img className="imgbtn" src={'https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png'} alt="" /></a>
                         <div class="dropdown">
                             <div class="dropdown-item">
-                                <a href="#">sign in</a>
-                                <a href="#">sign out</a>
+                                <a href="#" className='dropdown-btn'>sign in</a>
+                                <a href="#" className='dropdown-btn'>register</a>
                             </div>
                         </div>
                     </Nav>

@@ -19,17 +19,20 @@ body {
   width:35px;
   height:35px;
   vertical-align: middle;
+  z-index: 1;
+  position: relative;
 }
 
 .dropdown {
   opacity: 0;
   position: absolute;
-  width: 100px;
-  z-index: 2;
+  top:25px;
+  width: 70px;
+  z-index: 0;
   background: rgb(255, 255, 255);
   outline: none;
-  border:1px solid #1f4037;
-  border-radius: 20px;
+  border:1px solid transparent;
+  border-radius: 10px;
   right: 0px;
   display: flex;
   align-items: center;
@@ -39,6 +42,7 @@ body {
   padding: 0.5rem;
   transform: translateX(-40%);
   transition: opacity .15s ease-out;
+  font-size:1rem;
 }
 
 .dropdown-item a {
@@ -51,4 +55,13 @@ body {
 .has-dropdown:focus-within .dropdown   {
   opacity: 1;
   pointer-events: auto;
+}
+
+.dropdown-btn {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-btn:hover {
+  text-decoration: line-through;
 }
