@@ -68,10 +68,16 @@ const Navbar = () => {
                     <NavbarLink to="/benefit">benefit</NavbarLink>
                     <NavbarLink to="/learn">learn</NavbarLink>
                     <Nav href="#"><Button  className='btn' >Become a seller</Button></Nav>
-                    <Nav href="#"><i class="fas fa-cart-plus "></i></Nav>
-                    <Nav><NavAvatar/></Nav>
-                    {/* <Nav href="#"><img src={} alt="img" /></Nav> */}
-                    
+                    <Nav href="#"><i className="fas fa-cart-plus"></i></Nav>
+                    <Nav className="has-dropdown">
+                        <a href="#"><img className="imgbtn" src={'https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png'} alt="" /></a>
+                        <div class="dropdown">
+                            <div class="dropdown-item">
+                                <a href="#">sign in</a>
+                                <a href="#">sign out</a>
+                            </div>
+                        </div>
+                    </Nav>
                 </NavbarContainer>
             </Right>
         </Container>

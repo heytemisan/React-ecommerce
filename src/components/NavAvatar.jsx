@@ -21,24 +21,33 @@ const NavAvatar = () => {
     return (
         <Button>
             <NavItem>
-                hello
+                
             </NavItem>
         </Button>
     )
 }
 
-function NavItem(props) {
-const [open, setOpen] = useState(false);
-
+function NavItem() {
 return (
     <>
-        <ImageButton href="#" onClick={() => setOpen(!open)}>
-            <img className="imgbtn" src={'https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png'} alt="" />
+        <ImageButton>
+            <div className="has-dropdown">
+                <a href="#"> <img className="imgbtn" src={'https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png'} alt="" /></a>
+                    <ul className="dropdown">
+                        <li className="dropdown-item">
+                            <a href="#">light</a>
+                        </li>
+                        <li className="dropdown-item">
+                            <a href="#">dark</a>
+                        </li>
+                        <li className="dropdown-item">
+                            <a href="#">solarize</a>
+                        </li>
+                    </ul>
+            </div>
         </ImageButton>
-
-        {open && props.children}
     </>
 );
-}
+    }
 
 export default NavAvatar

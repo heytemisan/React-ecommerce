@@ -20,3 +20,35 @@ body {
   height:35px;
   vertical-align: middle;
 }
+
+.dropdown {
+  opacity: 0;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+  background: rgb(255, 255, 255);
+  outline: none;
+  border:1px solid #1f4037;
+  border-radius: 20px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 5rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  transform: translateX(-40%);
+  transition: opacity .15s ease-out;
+}
+
+.dropdown-item a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.has-dropdown:focus-within .dropdown   {
+  opacity: 1;
+  pointer-events: auto;
+}
