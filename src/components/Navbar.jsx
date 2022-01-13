@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -30,11 +30,19 @@ const NavbarLink = styled(NavLink)`
     margin:2px;
     padding:0 10px;
 
+    @media screen and (max-width:900px) {
+        display:none;        
+    }
+
 `
 
 const Nav = styled.a`
     margin:2px;
     padding:0 10px;
+
+    @media screen and (max-width:900px) {
+        display:none;      
+    }
 
 
     .fas.fa-cart-plus {
@@ -54,8 +62,27 @@ const Logo = styled.h1`
 
 `
 
+const NavButton = styled.button `
+    width: 40px;
+    height: 50px;
+    border:none;
+    background: none;
+    color: #1f4037;
+    cursor:pointer;
+    font-size:40px;
+    vertical-align:middle;
+
+    @media screen and (min-width:900px){
+        display:none;
+    }
+`
+
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleClick = () => {
+        setMenuOpen((curr)=> !curr);
+    }
     return (
         <Container>
             <Left>
@@ -74,11 +101,18 @@ const Navbar = () => {
                             <img className="imgbtn" src={'https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png'} alt="" /><i class="fas fa-sort-down"></i>
                         </a>
                     </Nav>
-                    <NavButton>
-                        {menuOpen ? <>&10005</>:<>☱</>}
+                    <NavButton onClick={handleClick}>
+                        {menuOpen ? <>☱</>:<>&#127828;</>}
                     </NavButton>
                 </NavbarContainer>
             </Right>
+
+            <NavbarExtendedContainer>
+                    <NavbarLinkExtend to="/">Home</NavbarLinkExtend>
+                    <NavbarLinkExtend to="/pricelist">pricelist</NavbarLinkExtend>
+                    <NavbarLinkExtend to="/benefit">benefit</NavbarLinkExtend>
+                    <NavbarLinkExtend to="/learn">learn</NavbarLinkExtend>
+            </NavbarExtendedContainer>
         </Container>
     )
 }
