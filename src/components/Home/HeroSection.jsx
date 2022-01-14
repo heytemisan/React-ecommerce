@@ -192,6 +192,8 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className="heroImage">
+                <span className="timer">&#9202;</span>
+                <span className="flame">&#128293;</span>
                 <img src="https://www.pngitem.com/pimgs/m/525-5257403_todoroki-food-hungry-cute-myheroacademia-idfk-hd-png.png" alt="profile" className="profile"/>
             </div>
             
