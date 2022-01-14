@@ -46,19 +46,23 @@ const Container = styled.div `
     .buttons {
         display:flex;
         margin-top: 20px;
+        font-size:1.2rem ;
     }
 
     .playbtn {
         width:20px;
-        margin-right:10px;
+        margin-right: 10px;
     }
 
     .getStartedbtn {
         background-color: #ED303C;
-        color:white;
-        width: 100px;
-        padding: 13px;
-        border-radius: 50px;
+        color: white;
+        width: 150px;
+        text-align: center;
+        margin-right:20px ;
+        padding: 26px;
+        border-radius:20px;
+        height: 70px;
     }
 
     .getStartedbtn > a{
@@ -68,9 +72,17 @@ const Container = styled.div `
     }
 
     .watchVidbtn {
-        color:white;
-        width: 150px;
-        padding: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ED303C;
+        color: white;
+        width: 160px;
+        text-align: center;
+        padding: 15px;
+        border-radius:20px;
+        height: 70px;
+        text-decoration:none;
     }
 
     .watchVidbtn:hover {
@@ -98,12 +110,19 @@ const HeroSection = () => {
                     </div>
                     <div className="buttons">
                         <div className="getStartedbtn">
-                            <a href="#">Get Started</a>
+                            <a href="#" className="getStartedBtn">Get Started</a>
                         </div>
                         <a className="watchVidbtn" href="#">
                             <img src={Play} alt="watchbtn" className="playbtn"/>
                             <p className="vidText">Watch Video</p>
                         </a>
+                    </div>
+                    <div className="review">
+                        <div className="imageCard">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="watchbtn" className="playbtn1"/>
+                            <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="watchbtn" className="playbtn2"/>
+                            <img src="https://p1.pxfuel.com/preview/901/383/654/girl-studio-female-woman-profile-black-and-white-royalty-free-thumbnail.jpg" alt="watchbtn" className="playbtn3"/>
+                        </div>
                     </div>
                 </div>
             </div>
