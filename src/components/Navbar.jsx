@@ -11,11 +11,11 @@ const Container = styled.div`
 `
 const Left = styled.div`
     flex:3;
-    padding-left:40px;
+    padding-left:80px;
 `
 const Right = styled.div`
     flex:7;
-    padding-right:40px;
+    padding-right:80px;
     display:flex;
     justify-content:flex-end;
 `
@@ -119,9 +119,7 @@ const Navbar = () => {
                     <Nav href="#"><Button  className='btn' >Become a seller</Button></Nav>
                     <Nav href="#"><i className="fas fa-cart-plus"></i></Nav>
                     <Nav>
-                        <a href="#">
-                            <img className="imgbtn" src={'https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png'} alt="" /><i class="fas fa-sort-down"></i>
-                        </a>
+                        <img className="imgbtn" src={'https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png'} alt="" /><i class="fas fa-sort-down"></i>
                     </Nav>
                     <NavButton onClick={handleClick}>
                         {menuOpen ? <>&#127829;</>:<>&#127828;</>}
