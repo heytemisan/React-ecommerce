@@ -75,8 +75,9 @@ const Container = styled.div `
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #ED303C;
-        color: white;
+        // background-color: #ED303C;
+        color: #595959;
+        font-weight: bold;
         width: 160px;
         text-align: center;
         padding: 15px;
@@ -87,9 +88,10 @@ const Container = styled.div `
 
     .watchVidbtn:hover {
         background-color: #555E7B;
-        border-radius: 50px;
+        border-radius: 20px;
         text-decoration:none;
-
+        color:white;
+        transition: 0.5s ease-in-out;
     }
 
 `
