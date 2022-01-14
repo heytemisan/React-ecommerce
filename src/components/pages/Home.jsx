@@ -43,7 +43,7 @@ const Container = styled.div `
 const HeroText = styled.div`
     display:grid;
     grid-template-columns: 4fr; 
-    grid-template-rows: 100px 200px 50px 30px 50px;
+    grid-template-rows: 100px 200px 50px 30px 100px;
     grid-template-areas: 
     "smallText smallText"
     "title title"
@@ -115,10 +115,12 @@ const HeroText = styled.div`
 
     .review {
         grid-area:review;
+        margin-top: 30px;
     }
 
     .imageCard {
-        margin:30px
+        top:60px
+        position:relative;
     }
 
     .watchVidbtn {
@@ -133,6 +135,38 @@ const HeroText = styled.div`
     .playbtn {
         width:20px;
         margin-right:10px;
+    }
+
+    .playbtn2{
+        width:50px;
+        position:relative;
+        z-index:2;
+        right:15px;
+        border-radius: 50px;
+        height: 50px;
+        object-fit: cover;
+        border:3px solid white;
+    }
+
+    .playbtn3 {
+        width:50px;
+        position:relative;
+        z-index:2;
+        right:30px;
+        border-radius: 50px;
+        height: 50px;
+        object-fit: cover;
+        border:3px solid white;
+    }
+
+    .playbtn1 {
+        width:50px;
+        position:relative;
+        z-index:0;
+        border-radius: 50px;
+        height: 50px;
+        object-fit: cover;
+        border:3px solid white;
     }
 
     .vidText {
@@ -171,9 +205,9 @@ const Home = () => {
                     </div>
                     <div className="review">
                         <div className="imageCard">
-                            <img src={Play} alt="watchbtn" className="playbtn"/>
-                            <img src={Play} alt="watchbtn" className="playbtn"/>
-                            <img src={Play} alt="watchbtn" className="playbtn"/>
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="watchbtn" className="playbtn1"/>
+                            <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="watchbtn" className="playbtn2"/>
+                            <img src="https://p1.pxfuel.com/preview/901/383/654/girl-studio-female-woman-profile-black-and-white-royalty-free-thumbnail.jpg" alt="watchbtn" className="playbtn3"/>
                         </div>
                     </div>
                 </HeroText>
