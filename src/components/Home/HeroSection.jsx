@@ -142,7 +142,12 @@ const Container = styled.div `
     }
 
     .heroImage {
-        background-color:brown;
+        width:50%;
+    }
+
+    .profile {
+        width:650px;
+        border-radius:50%;
     }
 `
 
@@ -187,9 +192,7 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className="heroImage">
-                <div className="profile">
-
-                </div>
+                <img src="https://www.pngitem.com/pimgs/m/525-5257403_todoroki-food-hungry-cute-myheroacademia-idfk-hd-png.png" alt="profile" className="profile"/>
             </div>
             
         </Container>
