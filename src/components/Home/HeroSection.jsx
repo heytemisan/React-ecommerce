@@ -17,7 +17,7 @@ const Container = styled.div `
     .text-btn {
         background: #FFEAEB;
         border-radius: 20px;
-        margin-top:95px;
+        margin-top:50px;
         color:#FF0944;
         width: 150px;
         padding: 13px;
@@ -140,6 +140,10 @@ const Container = styled.div `
         font-family: 'TeXGyreAdventorRegular'; 
         font-weight:900;
     }
+
+    .heroImage {
+        background-color:brown;
+    }
 `
 
 const HeroSection = () => {
@@ -183,7 +187,9 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className="heroImage">
+                <div className="profile">
 
+                </div>
             </div>
             
         </Container>
