@@ -94,6 +94,47 @@ const Container = styled.div `
         transition: 0.5s ease-in-out;
     }
 
+    .review {
+        margin-top: 40px;
+    }
+
+    .imageCard {
+        top:100px
+        position:relative;
+    }
+
+    .playbtn2{
+        width:50px;
+        position:relative;
+        z-index:2;
+        right:15px;
+        border-radius: 50px;
+        height: 50px;
+        object-fit: cover;
+        border:3px solid white;
+    }
+
+    .playbtn3 {
+        width:50px;
+        position:relative;
+        z-index:2;
+        right:30px;
+        border-radius: 50px;
+        height: 50px;
+        object-fit: cover;
+        border:3px solid white;
+    }
+
+    .playbtn1 {
+        width:50px;
+        position:relative;
+        z-index:0;
+        border-radius: 50px;
+        height: 50px;
+        object-fit: cover;
+        border:3px solid white;
+    }
+
 `
 
 const HeroSection = () => {
@@ -124,6 +165,14 @@ const HeroSection = () => {
                             <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="watchbtn" className="playbtn1"/>
                             <img src="https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="watchbtn" className="playbtn2"/>
                             <img src="https://p1.pxfuel.com/preview/901/383/654/girl-studio-female-woman-profile-black-and-white-royalty-free-thumbnail.jpg" alt="watchbtn" className="playbtn3"/>
+                        </div>
+                        <div className="textReview">
+                            <div className="Reviewtext">
+                                <h3>Our Happy Customer</h3>
+                            </div>
+                            <div className="reviewRate">
+                                4,8 (12.5k Review)
+                            </div>
                         </div>
                     </div>
                 </div>
