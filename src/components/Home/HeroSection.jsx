@@ -136,6 +136,10 @@ const Container = styled.div `
         border:3px solid white;
     }
 
+    .textReview {
+        font-family: 'TeXGyreAdventorRegular'; 
+        font-weight:900;
+    }
 `
 
 const HeroSection = () => {
@@ -168,8 +172,8 @@ const HeroSection = () => {
                             <img src="https://p1.pxfuel.com/preview/901/383/654/girl-studio-female-woman-profile-black-and-white-royalty-free-thumbnail.jpg" alt="watchbtn" className="playbtn3"/>
                         </div>
                         <div className="textReview">
-                            <div className="Reviewtext">
-                                <h3>Our Happy Customer</h3>
+                            <div>
+                                <h3  className="Reviewtext">Our Happy Customer</h3>
                             </div>
                             <div className="reviewRate">
                                 4,8 (12.5k Review)
