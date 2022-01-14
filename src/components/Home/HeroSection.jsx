@@ -96,41 +96,42 @@ const Container = styled.div `
 
     .review {
         margin-top: 40px;
+        display: flex;
+        align-items: center;
     }
 
     .imageCard {
-        top:100px
-        position:relative;
+        width: 50%;
     }
 
     .playbtn2{
-        width:50px;
+        width:70px;
         position:relative;
         z-index:2;
         right:15px;
         border-radius: 50px;
-        height: 50px;
+        height: 70px;
         object-fit: cover;
         border:3px solid white;
     }
 
     .playbtn3 {
-        width:50px;
+        width:70px;
         position:relative;
         z-index:2;
         right:30px;
         border-radius: 50px;
-        height: 50px;
+        height:70px;
         object-fit: cover;
         border:3px solid white;
     }
 
     .playbtn1 {
-        width:50px;
+        width:70px;
         position:relative;
         z-index:0;
         border-radius: 50px;
-        height: 50px;
+        height: 70px;
         object-fit: cover;
         border:3px solid white;
     }
