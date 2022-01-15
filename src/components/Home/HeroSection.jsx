@@ -149,6 +149,39 @@ const Container = styled.div `
         width:650px;
         border-radius:50%;
     }
+
+    .timer {
+        position:absolute;
+        top:200px;
+        right:540px;
+        font-size:80px;
+    }
+
+
+
+    .flame {
+        position:absolute;
+        top:200px;
+        right:40px;
+        font-size:50px;
+        transform:rotate(-30deg);
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: bottom;
+    }
+
+
+
+    .bounce-2 {
+        transform:rotate(-30deg);
+        animation-name: bounce-2;
+        animation-timing-function: ease;
+    }
+    @keyframes bounce-2 {
+        0%   { transform: translateY(0); }
+        50%  { transform: translateY(-100px); }
+        100% { transform: translateY(0); }
+    }
 `
 
 const HeroSection = () => {
@@ -182,7 +215,7 @@ const HeroSection = () => {
                         </div>
                         <div className="textReview">
                             <div>
-                                <h3  className="Reviewtext">Our Happy Customer</h3>
+                                <h3 className="Reviewtext">Our Happy Customer</h3>
                             </div>
                             <div className="reviewRate">
                                 4,8 (12.5k Review)
@@ -192,8 +225,8 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className="heroImage">
-                <span className="timer">&#9202;</span>
-                <span className="flame">&#128293;</span>
+                <span className="timer bounce-2">&#9202;</span>
+                <span className="flame bounce-2">&#128293;</span>
                 <img src="https://www.pngitem.com/pimgs/m/525-5257403_todoroki-food-hungry-cute-myheroacademia-idfk-hd-png.png" alt="profile" className="profile"/>
             </div>
             
